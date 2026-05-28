@@ -277,8 +277,6 @@ class OpenAIAugmentedLLM(
                         # DEPRECATED: https://platform.openai.com/docs/api-reference/chat/create#chat-create-max_tokens
                         # "max_tokens": params.maxTokens,
                         "max_completion_tokens": params.maxTokens,
-                        "reasoning_effort": params.reasoning_effort
-                        or self._reasoning_effort,
                     }
                     # gpt-5.4+ models (including gpt-5.5+) do not support
                     # reasoning_effort with function tools on /v1/chat/completions
